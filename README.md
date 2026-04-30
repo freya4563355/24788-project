@@ -29,4 +29,4 @@ No manual download required (~300MB).
 ## Reproduce Results
 
 Open `reproduce_result.ipynb` in Google Colab and run all cells.
-This will load the saved checkpoints and regenerate all figures without retraining.
+This will load the saved checkpoints and regenerate metrics without retraining.
