@@ -22,7 +22,6 @@ No manual download required (~300MB).
 
 ## Model Checkpoints
 
-Pre-trained checkpoints are available in the `checkpoints/` folder:
 - `best_GCN.pt` — GCN trained for 100 epochs, Val MAE: 300.3 meV
 - `best_SchNet.pt` — SchNet trained for 100 epochs, Val MAE: 97.5 meV
 - `best_DimeNet.pt` — DimeNet trained for 200 epochs, Val MAE: 80.0 meV
