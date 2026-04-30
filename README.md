@@ -1,10 +1,10 @@
 # 24788-project
 
-
-## SchNet and DimeNet Environment Setup
+## Baseline(GCN) and 2 model variant(SchNet and DimeNet) Environment Setup
 
 ```bash
 pip install torch-geometric
+# For SchNet and DimeNet
 pip install torch-cluster torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-2.5.0+cu121.html
 ```
 
@@ -23,10 +23,11 @@ No manual download required (~300MB).
 ## Model Checkpoints
 
 Pre-trained checkpoints are available in the `checkpoints/` folder:
+- `best_GCN.pt` — GCN trained for 100 epochs, Val MAE: 300.3 meV
 - `best_SchNet.pt` — SchNet trained for 100 epochs, Val MAE: 97.5 meV
 - `best_DimeNet.pt` — DimeNet trained for 200 epochs, Val MAE: 80.0 meV
 
-## Reproduce Results (SchNet & DimeNet)
+## Reproduce Results
 
-Open `reproduce_schnet_dimenet.ipynb` in Google Colab and run all cells.
+Open `reproduce_result.ipynb` in Google Colab and run all cells.
 This will load the saved checkpoints and regenerate all figures without retraining.
